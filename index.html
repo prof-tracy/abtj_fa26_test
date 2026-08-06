@@ -94,7 +94,17 @@
     padding: 0.2rem 0.5rem;
     letter-spacing: 0.05em;
   }
+.placeholder {
+  overflow: hidden; /* keeps the image clipped to the box's shape/rounding */
+}
 
+.placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* prevents stretching/distortion */
+  display: block;
+
+  
   .card .placeholder {
     width: 100%;
     aspect-ratio: 4 / 3;
@@ -185,7 +195,7 @@
 
       <div class="card" data-mark="No. 01">
         <h2>Frog Man</h2>
-        <div class="placeholder" role="img" aria-label="Image placeholder">
+        <div class="placeholder" >
           <img src="https://flic.kr/p/2stFEsK" alt="Frog Man as Horned Frog holding a trumpet" />
         </div>
         <p>
@@ -196,7 +206,7 @@
 
       <div class="card" data-mark="No. 02">
         <h2>Logos</h2>
-        <div class="placeholder" role="img" aria-label="Image placeholder">
+        <div class="placeholder" >
            <img src="https://flic.kr/p/2stEge5" alt="Logo Assortment" />
 
         </div>
@@ -208,7 +218,7 @@
 
       <div class="card" data-mark="No. 03">
         <h2>Fashion Art</h2>
-        <div class="placeholder" role="img" aria-label="Image placeholder">
+        <div class="placeholder" >
            <img src="https://flic.kr/p/2stDDcy" alt="drawing of 19th century floral cycling outfit" />
         </div>
         <p>
@@ -222,7 +232,7 @@
 
   <footer>
     <div class="rule"></div>
-    <p class="mono">Field Notes Journal &middot; Entries recorded on-site &middot; No two days alike</p>
+    <p class="mono">Design &middot; Illustration &middot; Paper Dolls</p>
   </footer>
 
 </body>
